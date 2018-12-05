@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="BSI3_Bowling.jnlp">
+  <information>
+    <title>BSI3_Bowling</title>
+    <vendor>HP</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="BSI3_Bowling.jar" size="10967" download="eager" />
+    <jar href="lib\JUnitParams-1.1.0.jar" size="67132" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="BSI3_Bowling" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="bsi3_bowling.BSI3_Bowling"  name="BSI3_Bowling" />
+  <update check="always"/>
+</jnlp>

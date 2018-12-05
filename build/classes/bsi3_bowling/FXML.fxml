@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="518.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9" fx:controller="bsi3_bowling.FXMLController">
+   <children>
+      <Label layoutX="14.0" layoutY="16.0" text="Runda 1:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f1t1" layoutX="83.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f1t2" layoutX="151.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="15.0" layoutY="48.0" text="Runda 2:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f2t1" layoutX="84.0" layoutY="46.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f2t2" layoutX="152.0" layoutY="46.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="15.0" layoutY="82.0" text="Runda 3:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f3t1" layoutX="84.0" layoutY="80.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f3t2" layoutX="152.0" layoutY="80.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="16.0" layoutY="114.0" text="Runda 4:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f4t1" layoutX="85.0" layoutY="112.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f4t2" layoutX="153.0" layoutY="112.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="16.0" layoutY="145.0" text="Runda 5:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f5t1" layoutX="85.0" layoutY="143.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f5t2" layoutX="153.0" layoutY="143.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="17.0" layoutY="177.0" text="Runda 6:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f6t1" layoutX="86.0" layoutY="175.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f6t2" layoutX="154.0" layoutY="175.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="17.0" layoutY="211.0" text="Runda 7:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f7t1" layoutX="86.0" layoutY="209.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f7t2" layoutX="154.0" layoutY="209.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="18.0" layoutY="243.0" text="Runda 8:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f8t1" layoutX="87.0" layoutY="241.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f8t2" layoutX="155.0" layoutY="241.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="18.0" layoutY="275.0" text="Runda 9:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f9t1" layoutX="87.0" layoutY="273.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f9t2" layoutX="155.0" layoutY="273.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="19.0" layoutY="307.0" text="Runda 10:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="f10t1" layoutX="88.0" layoutY="305.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="f10t2" layoutX="156.0" layoutY="305.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label fx:id="bonusLabel" layoutX="20.0" layoutY="338.0" text="BONUS:" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bonus1" layoutX="89.0" layoutY="336.0" prefHeight="25.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="bonus2" layoutX="157.0" layoutY="336.0" prefHeight="25.0" prefWidth="58.0" visible="false" />
+      <Button layoutX="252.0" layoutY="14.0" mnemonicParsing="false" onAction="#calculateResultAction" prefHeight="33.0" prefWidth="114.0" text="OBLICZ WYNIK" />
+      <Label layoutX="252.0" layoutY="61.0" text="WYNIK:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultLabel" layoutX="309.0" layoutY="61.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="125.0" mnemonicParsing="false" onAction="#FramesWithoutAnyExceptionsActions" text="FramesWithoutAnyExceptions" />
+      <Button layoutX="252.0" layoutY="156.0" mnemonicParsing="false" onAction="#ThreeStrikesAction" text="ThreeStrikes" />
+      <Button layoutX="252.0" layoutY="188.0" mnemonicParsing="false" onAction="#TenStrikesAndNonStrikesBonusFramesAction" text="TenStrikesAndNonStrikesBonusFrames" />
+      <Button layoutX="252.0" layoutY="219.0" mnemonicParsing="false" onAction="#TenStrikesPlusBonusStrikesAction" text="TenStrikesPlusBonusStrikes" />
+      <Button layoutX="252.0" layoutY="251.0" mnemonicParsing="false" onAction="#LastFrameIsStrikeAction" text="LastFrameIsStrike" />
+      <Button layoutX="252.0" layoutY="283.0" mnemonicParsing="false" onAction="#ThreeSparesAction" text="ThreeSpares" />
+      <Button layoutX="252.0" layoutY="315.0" mnemonicParsing="false" onAction="#LastFrameIsSpareAction" text="LastFrameIsSpare" />
+      <Button layoutX="252.0" layoutY="346.0" mnemonicParsing="false" onAction="#TwoStrikesFourSparesAction" text="TwoStrikesFourSpares" />
+      <Button layoutX="252.0" layoutY="378.0" mnemonicParsing="false" onAction="#TenSparesAction" text="TenSpares" />
+      <Label layoutX="435.0" layoutY="129.0" text="74" />
+      <Label layoutX="339.0" layoutY="160.0" text="99" />
+      <Label layoutX="479.0" layoutY="192.0" text="283" />
+      <Label layoutX="425.0" layoutY="223.0" text="300" />
+      <Label layoutX="366.0" layoutY="255.0" text="83" />
+      <Label layoutX="339.0" layoutY="287.0" text="89" />
+      <Label layoutX="366.0" layoutY="319.0" text="81" />
+      <Label layoutX="392.0" layoutY="350.0" text="115" />
+      <Label layoutX="329.0" layoutY="382.0" text="148" />
+   </children>
+</AnchorPane>
